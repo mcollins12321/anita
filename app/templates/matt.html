@@ -206,8 +206,9 @@
 {% endblock %} {% block scripts %} {{ super() }}
 <script src="{{ url_for('static', filename='inspinia/js/plugins/footable/footable.all.min.js') }}"></script>
 <script src="{{ url_for('static', filename='inspinia/js/plugins/sparkline/jquery.sparkline.min.js') }}"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/antarctica.js"></script>
 <script>
 var hk_nbufs=[];
 var hk_nows=[];
@@ -1537,60 +1538,54 @@ $(document).ready(function() {
     });
     $(function () {
 
-    Highcharts.chart('container', {
-
-        chart: {
-            polar: true
+    // Prepare demo data
+    var data = [
+        {
+            "hc-key": "aq-3638",
+            "value": 0
         },
+        {
+            "hc-key": "aq-3639",
+            "value": 1
+        }
+    ];
+
+    // Initiate the chart
+    $('#container').highcharts('Map', {
 
         title: {
-            text: 'Highcharts Polar Chart'
+            text: 'Anita Course'
         },
 
-        pane: {
-            startAngle: 0,
-            endAngle: 360
+        subtitle: {
+            text: 'Source map: <a href="https://code.highcharts.com/mapdata/custom/antarctica.js">Antarctica</a>'
         },
 
-        xAxis: {
-            tickInterval: 45,
-            min: 0,
-            max: 360,
-            labels: {
-                formatter: function () {
-                    return this.value + '°';
-                }
+        mapNavigation: {
+            enabled: true,
+            buttonOptions: {
+                verticalAlign: 'bottom'
             }
         },
 
-        yAxis: {
+        colorAxis: {
             min: 0
         },
 
-        plotOptions: {
-            series: {
-                pointStart: 0,
-                pointInterval: 45
-            },
-            column: {
-                pointPadding: 0,
-                groupPadding: 0
-            }
-        },
-
         series: [{
-            type: 'column',
-            name: 'Column',
-            data: [8, 7, 6, 5, 4, 3, 2, 1],
-            pointPlacement: 'between'
-        }, {
-            type: 'line',
-            name: 'Line',
-            data: [1, 2, 3, 4, 5, 6, 7, 8]
-        }, {
-            type: 'area',
-            name: 'Area',
-            data: [1, 8, 2, 7, 3, 6, 4, 5]
+            data: data,
+            mapData: Highcharts.maps['custom/antarctica'],
+            joinBy: 'hc-key',
+            name: 'Random data',
+            states: {
+                hover: {
+                    color: '#a4edba'
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}'
+            }
         }]
     });
 });
