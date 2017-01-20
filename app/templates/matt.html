@@ -5,203 +5,204 @@
         <div class="col-lg-6">
             <div class="ibox float-e-margins" id="gps">
                 <div class="ibox-title">
-                   <h5>GPS Panel</h5>
-                   <div class="ibox-tools">
-                       <a class="collapse-link">
-                          <i class="fa fa-chevron-up"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="ibox-content" >
-                    <table data-sort="false" class="footable" data-page-size="26" style="width:100%">
-                        <tbody>
-                            <th>
-                                <!-- <td>GPStype:</td> -->
-                                <td>adu5A</td>
-                                <td>adu5B</td>
-                                <td>g12</td>
-                            </th>
-                            <tr>
-                                <td>Index</td>
-                                <td id = 'adu5_pat_index'></td>
-                                <td></td>
-                                <td id = 'g12_pos_index'></td>
-                            </tr>
-                            
-                            
-                            <tr>
-                                <td>Time</td>
-                                <td id='time_adu5_pat_A'></td>
-                                <td id='time_adu5_pat_B'></td>
-                                <td id='time_g12_pos'></td>
-                            </tr>
-                            <tr>
-                                <td>UnixTime</td>
-                                <td id='unixtime_adu5_pat_A'></td>
-                                <td id='unixtime_adu5_pat_B'></td>
-                                <td id='unixtime_g12_pos'></td>
-                            </tr>
-                            <tr>
-                                <td>Now</td>
-                                <td id='now_adu5_pat_A'></td>
-                                <td id='now_adu5_pat_B'></td>
-                                <td id='now_g12_pos'></td>                                
-                            </tr>
-                            <tr>
-                                <td>UnixNow</td>
-                                <td id='unixnow_adu5_pat_A'></td>
-                                <td id='unixnow_adu5_pat_B'></td> 
-                                <td id='unixnow_g12_pos'></td>                                 
-                            </tr>
-                            <tr>
-                                <td>Latitude</td>
-                                <td id='latitude_adu5_pat_A'></td>
-                                <td id='latitude_adu5_pat_B'></td>
-                                <td id='latitude_g12_pos'></td>
-                            </tr>
-                            <tr>
-                                <td>Longitude</td>  
-                                <td id='longitude_adu5_pat_A'></td>
-                                <td id='longitude_adu5_pat_B'></td>
-                                <td id='longitude_g12_pos'></td>                              
-                            </tr>
-                            <tr>
-                                <td>Altitude</td>
-                                <td id='altitude_adu5_pat_A'></td>
-                                <td id='altitude_adu5_pat_B'></td>
-                                <td id='altitude_g12_pos'></td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Pitch</td>
-                                <td id='pitch_adu5_pat_A'></td>
-                                <td id='pitch_adu5_pat_B'></td>
-                                <td></td>
-                            </tr>
-                            <tr>                                
-                                <td>Roll</td> 
-                                <td id='roll_adu5_pat_A'></td>
-                                <td id='roll_adu5_pat_B'></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Heading</td>      
-                                <td id='heading_adu5_pat_A'></td>
-                                <td id='heading_adu5_pat_B'></td>
-                                <td></td>
-                            </tr>
+                 <h5>GPS Panel</h5>
+                 <div class="ibox-tools">
+                     <a class="collapse-link">
+                      <i class="fa fa-chevron-up"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="ibox-content" >
+            <table data-sort="false" class="footable" data-page-size="26" style="width:100%">
+                <tbody>
+                    <th>
+                        <!-- <td>GPStype:</td> -->
+                        <td>adu5A</td>
+                        <td>adu5B</td>
+                        <td>g12</td>
+                    </th>
+                    <tr>
+                        <td>Index</td>
+                        <td id = 'adu5_pat_index'></td>
+                        <td></td>
+                        <td id = 'g12_pos_index'></td>
+                    </tr>
 
-                            <tr>
-                                <td>Flag</td>
-                                <td id='flag_adu5_pat_A'></td>
-                                <td id='flag_adu5_pat_B'></td>
-                                <td></td>
-                            </tr>
-                            <tr>                                
-                                <td>BRMS</td> 
-                                <td id='brms_adu5_pat_A'></td>
-                                <td id='brms_adu5_pat_B'></td>
-                                <td></td>
-                            </tr>
 
-                            <tr>                                
-                                <td>D2McM[km]</td> 
-                                <td id='d2mcm_adu5_pat_A'></td>
-                                <td id='d2mcm_adu5_pat_B'></td>
-                                <td id='d2mcm_g12_pos_B'></td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#FFFFFF" style="line-height:20px;" colspan=3>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>Index</td>
-                                <td id = 'adu5_vtg_index'></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>                                
-                                <td>knots</td>
-                                <td id='vkt_adu5_vtg_A'></td>
-                                <td id='vkt_adu5_vtg_B'></td>
-                                <td id='vkt_g12_pos'></td> 
-                            </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td id='time_adu5_pat_A'></td>
+                        <td id='time_adu5_pat_B'></td>
+                        <td id='time_g12_pos'></td>
+                    </tr>
+                    <tr>
+                        <td>UnixTime</td>
+                        <td id='unixtime_adu5_pat_A'></td>
+                        <td id='unixtime_adu5_pat_B'></td>
+                        <td id='unixtime_g12_pos'></td>
+                    </tr>
+                    <tr>
+                        <td>Now</td>
+                        <td id='now_adu5_pat_A'></td>
+                        <td id='now_adu5_pat_B'></td>
+                        <td id='now_g12_pos'></td>                                
+                    </tr>
+                    <tr>
+                        <td>UnixNow</td>
+                        <td id='unixnow_adu5_pat_A'></td>
+                        <td id='unixnow_adu5_pat_B'></td> 
+                        <td id='unixnow_g12_pos'></td>                                 
+                    </tr>
+                    <tr>
+                        <td>Latitude</td>
+                        <td id='latitude_adu5_pat_A'></td>
+                        <td id='latitude_adu5_pat_B'></td>
+                        <td id='latitude_g12_pos'></td>
+                    </tr>
+                    <tr>
+                        <td>Longitude</td>  
+                        <td id='longitude_adu5_pat_A'></td>
+                        <td id='longitude_adu5_pat_B'></td>
+                        <td id='longitude_g12_pos'></td>                              
+                    </tr>
+                    <tr>
+                        <td>Altitude</td>
+                        <td id='altitude_adu5_pat_A'></td>
+                        <td id='altitude_adu5_pat_B'></td>
+                        <td id='altitude_g12_pos'></td>
+                    </tr>
 
-                            <tr>
-                                <td>kph</td> 
-                                <td id='vkph_adu5_vtg_A'></td>
-                                <td id='vkph_adu5_vtg_B'></td>
-                                <td id='vkph_g12_pos'></td>                           
-                            </tr>
-                            <tr>
-                                <td bgcolor="#FFFFFF" style="line-height:20px;" colspan=3>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>Index</td>
-                                <td id = 'adu5_sat_index'></td>
-                                <td></td>
-                                <td id = 'g12_sat_index'></td>
-                            </tr>
-                            <tr>
-                                <td># of Sats</td>
-                                <td id='numsats_adu5_sat_A'></td>
-                                <td id='numsats_adu5_sat_B'></td> 
-                                <td id='numsats_g12_sat'></td>                                 
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="ibox float-e-margins" id="gps">
-                <div class="ibox-title">
-                   <h5>Goals</h5>
-                   <div class="ibox-tools">
-                       <a class="collapse-link">
-                          <i class="fa fa-chevron-up"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="ibox-content" >
-                    <table data-sort="false" class="footable" data-page-size="26" style="width:100%">
-                        <tbody>
-                            <div id="container" style="min-width: 310px; max-width: : 400px; height: 400px; margin: 0 auto"></div>;
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                    <tr>
+                        <td>Pitch</td>
+                        <td id='pitch_adu5_pat_A'></td>
+                        <td id='pitch_adu5_pat_B'></td>
+                        <td></td>
+                    </tr>
+                    <tr>                                
+                        <td>Roll</td> 
+                        <td id='roll_adu5_pat_A'></td>
+                        <td id='roll_adu5_pat_B'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Heading</td>      
+                        <td id='heading_adu5_pat_A'></td>
+                        <td id='heading_adu5_pat_B'></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Flag</td>
+                        <td id='flag_adu5_pat_A'></td>
+                        <td id='flag_adu5_pat_B'></td>
+                        <td></td>
+                    </tr>
+                    <tr>                                
+                        <td>BRMS</td> 
+                        <td id='brms_adu5_pat_A'></td>
+                        <td id='brms_adu5_pat_B'></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>                                
+                        <td>D2McM[km]</td> 
+                        <td id='d2mcm_adu5_pat_A'></td>
+                        <td id='d2mcm_adu5_pat_B'></td>
+                        <td id='d2mcm_g12_pos_B'></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#FFFFFF" style="line-height:20px;" colspan=3>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Index</td>
+                        <td id = 'adu5_vtg_index'></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>                                
+                        <td>knots</td>
+                        <td id='vkt_adu5_vtg_A'></td>
+                        <td id='vkt_adu5_vtg_B'></td>
+                        <td id='vkt_g12_pos'></td> 
+                    </tr>
+
+                    <tr>
+                        <td>kph</td> 
+                        <td id='vkph_adu5_vtg_A'></td>
+                        <td id='vkph_adu5_vtg_B'></td>
+                        <td id='vkph_g12_pos'></td>                           
+                    </tr>
+                    <tr>
+                        <td bgcolor="#FFFFFF" style="line-height:20px;" colspan=3>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Index</td>
+                        <td id = 'adu5_sat_index'></td>
+                        <td></td>
+                        <td id = 'g12_sat_index'></td>
+                    </tr>
+                    <tr>
+                        <td># of Sats</td>
+                        <td id='numsats_adu5_sat_A'></td>
+                        <td id='numsats_adu5_sat_B'></td> 
+                        <td id='numsats_g12_sat'></td>                                 
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-    <div id="dialog" class='hide'>
-        <ul class="nav navbar-top-links">
-            <span>Zoom Depth:</span>  <span id = 'zoomIndex'>1/1</span>
-            <li><button type="button" id='reset' class="btn btn-success btn-xs">Reset</button> </li>
-            <li><button type="button" id='undo' class="btn btn-success btn-xs">Undo</button> </li>
-            <li><button type="button" id='redo' class="btn btn-success btn-xs">Redo</button> </li>
-            <li><button type="button" id='1hour' class="btn btn-success btn-xs">1Hour</button> </li>
-            <li><button type="button" id='6hours' class="btn btn-success btn-xs">6Hours</button> </li>
-            <li><button type="button" id='24hours' class="btn btn-success btn-xs">24Hours</button> </li>
-             <li><button type="button" id='1month' class="btn btn-success btn-xs">1Month</button> </li>
-        </ul>
-        <div id='chart1'></div>
-        </br>
-        <div class="col-sm-6">
-            <div class="form-group">
-                <label>Reference UTC</label>
-                <input id="reference_time" placeholder="Enter your end time" class="form-control">
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="form-group">
-                <label>Length(s)</label>
-                <input id="length" value="21600" placeholder="Enter the number of seconds" class="form-control">
-            </div>
-        </div>
-        <div class="col-sm-3">
-            </br>
-            <button id="request" type="button" class="btn btn-primary">Request</button>
-        </div>
+</div>
+<div class="col-lg-10">
+    <div class="ibox float-e-margins" id="gps">
+        <div class="ibox-title">
+         <h5>Goals</h5>
+         <div class="ibox-tools">
+             <a class="collapse-link">
+              <i class="fa fa-chevron-up"></i>
+          </a>
+      </div>
+  </div>
+  <div class="ibox-content" >
+    <table data-sort="false" class="footable" data-page-size="26" style="width:100%">
+        <tbody>
+            <!--<div id="container" style="min-width: 310px; max-width: : 400px; height: 400px; margin: 0 auto"></div>;-->
+            <div id="container"></div>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+</div>
+<div id="dialog" class='hide'>
+    <ul class="nav navbar-top-links">
+        <span>Zoom Depth:</span>  <span id = 'zoomIndex'>1/1</span>
+        <li><button type="button" id='reset' class="btn btn-success btn-xs">Reset</button> </li>
+        <li><button type="button" id='undo' class="btn btn-success btn-xs">Undo</button> </li>
+        <li><button type="button" id='redo' class="btn btn-success btn-xs">Redo</button> </li>
+        <li><button type="button" id='1hour' class="btn btn-success btn-xs">1Hour</button> </li>
+        <li><button type="button" id='6hours' class="btn btn-success btn-xs">6Hours</button> </li>
+        <li><button type="button" id='24hours' class="btn btn-success btn-xs">24Hours</button> </li>
+        <li><button type="button" id='1month' class="btn btn-success btn-xs">1Month</button> </li>
+    </ul>
+    <div id='chart1'></div>
+</br>
+<div class="col-sm-6">
+    <div class="form-group">
+        <label>Reference UTC</label>
+        <input id="reference_time" placeholder="Enter your end time" class="form-control">
     </div>
+</div>
+<div class="col-sm-3">
+    <div class="form-group">
+        <label>Length(s)</label>
+        <input id="length" value="21600" placeholder="Enter the number of seconds" class="form-control">
+    </div>
+</div>
+<div class="col-sm-3">
+</br>
+<button id="request" type="button" class="btn btn-primary">Request</button>
+</div>
+</div>
 </div>
 {% endblock %} {% block scripts %} {{ super() }}
 <script src="{{ url_for('static', filename='inspinia/js/plugins/footable/footable.all.min.js') }}"></script>
@@ -209,54 +210,58 @@
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/mapdata/custom/antarctica.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
 <script>
-var hk_nbufs=[];
-var hk_nows=[];
-var hk_times=[];
-var sshk_nbufs=[];
-var sshk_nows=[];
-var sshk_times=[];
-var mon_nbufs=[];
-var mon_nows=[];
-var mon_times=[];
-var cmd_nbufs=[];
-var cmd_nows=[];
-var cmd_times=[];
-var adu5_pat_nbufs=[];
-var adu5_pat_nows=[];
-var adu5_pat_times=[];
-var adu5_vtg_nbufs=[];
-var adu5_vtg_nows=[];
-var adu5_vtg_times=[];
-var adu5_sat_nbufs=[];
-var adu5_sat_nows=[];
-var adu5_sat_times=[];
-var g12_pos_nbufs=[];
-var g12_pos_nows=[];
-var g12_pos_times=[];
-var g12_sat_nbufs=[];
-var g12_sat_nows=[];
-var g12_sat_times=[];
-var i=0;
-var j=0;
-var k=0;
-var l=0;
-var m=0;
-var n=0;
-var o=0;
-var p=0;
-var q=0;
-var offset_hk = 0;
-var offset_sshk = 0;
-var offset_mon = 0;
-var offset_cmd = 0;
-var offset_adu5_pat = 0;
-var offset_adu5_vtg = 0;
-var offset_adu5_sat = 0;
-var offset_g12_pos = 0;
-var offset_g12_sat = 0;
+    var hk_nbufs=[];
+    var hk_nows=[];
+    var hk_times=[];
+    var sshk_nbufs=[];
+    var sshk_nows=[];
+    var sshk_times=[];
+    var mon_nbufs=[];
+    var mon_nows=[];
+    var mon_times=[];
+    var cmd_nbufs=[];
+    var cmd_nows=[];
+    var cmd_times=[];
+    var adu5_pat_nbufs=[];
+    var adu5_pat_nows=[];
+    var adu5_pat_times=[];
+    var adu5_vtg_nbufs=[];
+    var adu5_vtg_nows=[];
+    var adu5_vtg_times=[];
+    var adu5_sat_nbufs=[];
+    var adu5_sat_nows=[];
+    var adu5_sat_times=[];
+    var g12_pos_nbufs=[];
+    var g12_pos_nows=[];
+    var g12_pos_times=[];
+    var g12_sat_nbufs=[];
+    var g12_sat_nows=[];
+    var g12_sat_times=[];
+    var i=0;
+    var j=0;
+    var k=0;
+    var l=0;
+    var m=0;
+    var n=0;
+    var o=0;
+    var p=0;
+    var q=0;
+    var offset_hk = 0;
+    var offset_sshk = 0;
+    var offset_mon = 0;
+    var offset_cmd = 0;
+    var offset_adu5_pat = 0;
+    var offset_adu5_vtg = 0;
+    var offset_adu5_sat = 0;
+    var offset_g12_pos = 0;
+    var offset_g12_sat = 0;
 
-var connected = false;
+    var connected = false;
 var sleep_interval = 2000 //by default, re-access the database every 2seconds to see if there are any new data comes in.
 
 var sync_on = false;
@@ -752,23 +757,23 @@ function updatehtml_cmd(cmd) {
         }
 
         if (length < 7){
-           for (var ii = 1; ii < length; ii++) { 
-                last_command += '0x' + array[ii].toString(16) + ' ';
-            } 
-        }else{
-             for (var ii = 1; ii < 6; ii++) { 
-                last_command += '0x' + array[ii].toString(16) + ' ';
-            }
-            for (var ii = 6; ii < length; ii++) { 
-                antennas_off += '0x' + array[ii].toString(16) + ' ';
-            }
-        }
+         for (var ii = 1; ii < length; ii++) { 
+            last_command += '0x' + array[ii].toString(16) + ' ';
+        } 
+    }else{
+       for (var ii = 1; ii < 6; ii++) { 
+        last_command += '0x' + array[ii].toString(16) + ' ';
+    }
+    for (var ii = 6; ii < length; ii++) { 
+        antennas_off += '0x' + array[ii].toString(16) + ' ';
+    }
+}
 
-       
-        $('#cmd #last_command').html(last_command);
-        $('#cmd #antennas_off').html(antennas_off);
 
-    });
+$('#cmd #last_command').html(last_command);
+$('#cmd #antennas_off').html(antennas_off);
+
+});
 }
 
 function updatehtml_adu5_pat(adu5_pat) {
@@ -791,7 +796,7 @@ function updatehtml_adu5_pat(adu5_pat) {
             $('#gps #brms_adu5_pat_A').css('color', 'LightGrey');
             $('#gps #d2mcm_adu5_pat_A').css('color', 'LightGrey');     
         }else{
-            
+
             $('#gps #unixnow_adu5_pat_A').html(data.pat_a.now).css('color', 'inherit');
             $('#gps #unixtime_adu5_pat_A').html(data.pat_a.time).css('color', 'inherit');
             $('#gps #now_adu5_pat_A').html(timeConverter(data.pat_a.now)).css('color', 'inherit');
@@ -806,7 +811,7 @@ function updatehtml_adu5_pat(adu5_pat) {
             $('#gps #brms_adu5_pat_A').html(data.pat_a.brms).css('color', 'inherit');  
             $('#gps #d2mcm_adu5_pat_A').html(Distance2McM(data.pat_a.longitude,data.pat_a.latitude)).css('color', 'inherit');     
         }
-           
+
         if (data.pat_b == undefined){
             $('#gps #unixnow_adu5_pat_B').css('color', 'LightGrey');
             $('#gps #unixtime_adu5_pat_B').css('color', 'LightGrey');
@@ -836,7 +841,7 @@ function updatehtml_adu5_pat(adu5_pat) {
             $('#gps #brms_adu5_pat_B').html(data.pat_a.brms).css('color', 'inherit');
             $('#gps #d2mcm_adu5_pat_B').html(Distance2McM(data.pat_a.longitude,data.pat_a.latitude)).css('color', 'inherit');         
         }
-   });
+    });
 }
 
 function updatehtml_adu5_vtg(adu5_vtg) {
@@ -858,9 +863,9 @@ function updatehtml_adu5_vtg(adu5_vtg) {
             $('#gps #vkph_adu5_vtg_B').html(data.vtg_b.vkph).css('color', 'inherit');
             $('#gps #vkt_adu5_vtg_B').html(data.vtg_b.vkt).css('color', 'inherit');
         }
-            
 
-   });
+
+    });
 }
 
 function updatehtml_adu5_sat(adu5_sat) {
@@ -878,33 +883,33 @@ function updatehtml_adu5_sat(adu5_sat) {
         }else{
             $('#gps #numsats_adu5_sat_B').html(data.sat_b.numsats[0]+', '+data.sat_b.numsats[1]+', '+data.sat_b.numsats[2]+', '+data.sat_b.numsats[3]).css('color', 'inherit');
         }
-            
-            
-   });
+
+
+    });
 }
 
 function updatehtml_g12_pos(g12_pos){
     $('#gps #g12_pos_index').html(o + 1 + "/" + g12_pos_nbufs.length);
-   if (!g12_pos) return;
-   $.getJSON('/api/' + ip_db + '/g12_pos/' + g12_pos, function(data){
-       $('#gps #unixnow_g12_pos').html(data.pos.now);
-       $('#gps #unixtime_g12_pos').html(data.pos.time);
-       $('#gps #now_g12_pos').html(timeConverter(data.pos.now));
-       $('#gps #time_g12_pos').html(timeConverter(data.pos.time));
-       $('#gps #latitude_g12_pos').html(data.pos.latitude);
-       $('#gps #longitude_g12_pos').html(data.pos.longitude);
-       $('#gps #altitude_g12_pos').html(data.pos.altitude);    
-       $('#gps #d2mcm_g12_pos_B').html(Distance2McM(data.pos.longitude,data.pos.latitude));         
-    
-   });
+    if (!g12_pos) return;
+    $.getJSON('/api/' + ip_db + '/g12_pos/' + g12_pos, function(data){
+     $('#gps #unixnow_g12_pos').html(data.pos.now);
+     $('#gps #unixtime_g12_pos').html(data.pos.time);
+     $('#gps #now_g12_pos').html(timeConverter(data.pos.now));
+     $('#gps #time_g12_pos').html(timeConverter(data.pos.time));
+     $('#gps #latitude_g12_pos').html(data.pos.latitude);
+     $('#gps #longitude_g12_pos').html(data.pos.longitude);
+     $('#gps #altitude_g12_pos').html(data.pos.altitude);    
+     $('#gps #d2mcm_g12_pos_B').html(Distance2McM(data.pos.longitude,data.pos.latitude));         
+
+ });
 }
 
 function updatehtml_g12_sat(g12_sat){
     $('#gps #g12_sat_index').html(p + 1 + "/" + g12_sat_nbufs.length);
-   if (!g12_sat) return;
-   $.getJSON('/api/' + ip_db + '/g12_sat/' + g12_sat, function(data){
-       $('#gps #numsats_g12_sat').html(data.sat.numsats); 
-   });
+    if (!g12_sat) return;
+    $.getJSON('/api/' + ip_db + '/g12_sat/' + g12_sat, function(data){
+     $('#gps #numsats_g12_sat').html(data.sat.numsats); 
+ });
 }
 
 $(document).ready(function() {
@@ -966,20 +971,20 @@ $(document).ready(function() {
                     }
                 },
                 series: [
-                    {
-                        lineWidth: .5,
-                        markerOptions: {
-                            size: 2,
-                            color: 'blue' 
-                        }
-                    },
-                    {
-                        lineWidth: .5,
-                        markerOptions: {
-                            size: 2,
-                            color: 'red' 
-                        }
+                {
+                    lineWidth: .5,
+                    markerOptions: {
+                        size: 2,
+                        color: 'blue' 
                     }
+                },
+                {
+                    lineWidth: .5,
+                    markerOptions: {
+                        size: 2,
+                        color: 'red' 
+                    }
+                }
                 ],
                 legend: {
                     show: multi_plot,
@@ -1168,21 +1173,21 @@ $(document).ready(function() {
         $("#dialog_" + name + " #1month").click(function() {
             var stack_length = $("#dialog_" + name).data('zoomStack').length;
             if ( stack_length > 0){
-             var index = $("#dialog_" + name).data('zoomStackIndex');
+               var index = $("#dialog_" + name).data('zoomStackIndex');
 
-                var new_index = index + 1;
-                $("#dialog_" + name).data('zoomStackIndex', new_index);
-                var new_zoomStack = $("#dialog_" + name).data('zoomStack').slice(0, new_index);
-                var end_time = new_zoomStack[index][0];
-                var length = 2592000;
-                new_zoomStack.push([end_time, length])
-                $("#dialog_" + name).data('zoomStack', new_zoomStack);
-                $("#dialog_" + name).find('input[id="reference_time"]').val(end_time);
-                $("#dialog_" + name).find('input[id="length"]').val(length);
-                $("#dialog_" + name).find('button[id="request"]').trigger("click");
-                $("#dialog_" + name + " #zoomIndex").text(new_index + 1 + '/' + new_zoomStack.length);
-            }
-        });
+               var new_index = index + 1;
+               $("#dialog_" + name).data('zoomStackIndex', new_index);
+               var new_zoomStack = $("#dialog_" + name).data('zoomStack').slice(0, new_index);
+               var end_time = new_zoomStack[index][0];
+               var length = 2592000;
+               new_zoomStack.push([end_time, length])
+               $("#dialog_" + name).data('zoomStack', new_zoomStack);
+               $("#dialog_" + name).find('input[id="reference_time"]').val(end_time);
+               $("#dialog_" + name).find('input[id="length"]').val(length);
+               $("#dialog_" + name).find('button[id="request"]').trigger("click");
+               $("#dialog_" + name + " #zoomIndex").text(new_index + 1 + '/' + new_zoomStack.length);
+           }
+       });
 
         $("#dialog_" + name).find('button[id="request"]').click(function() {
             console.log('click');
@@ -1197,19 +1202,19 @@ $(document).ready(function() {
         $("#dialog_" + name).find('button[id="request"]').trigger("click");
     });
 
-    $('.footable').footable();
-    function autoload() {
-        $.getJSON('/api/' + ip_db + '/hk/nbufs/' + offset_hk, function(data) {
-            new_length = data.hk_nbufs.length
-            offset_hk += new_length
-            hk_nbufs = hk_nbufs.concat(data.hk_nbufs);
-            hk_nows = hk_nows.concat(data.hk_nows);
-            hk_times = hk_times.concat(data.hk_times);
-            
-            $('#hk #index').html(i + 1 + "/" + hk_nbufs.length);
-            $('#connect').removeClass('connect').removeClass('btn-primary').addClass('btn-warning');
-            $('#connect').html('Disconnect');
-            $('.chosen-select').attr("disabled", true).trigger("chosen:updated");
+ $('.footable').footable();
+ function autoload() {
+    $.getJSON('/api/' + ip_db + '/hk/nbufs/' + offset_hk, function(data) {
+        new_length = data.hk_nbufs.length
+        offset_hk += new_length
+        hk_nbufs = hk_nbufs.concat(data.hk_nbufs);
+        hk_nows = hk_nows.concat(data.hk_nows);
+        hk_times = hk_times.concat(data.hk_times);
+
+        $('#hk #index').html(i + 1 + "/" + hk_nbufs.length);
+        $('#connect').removeClass('connect').removeClass('btn-primary').addClass('btn-warning');
+        $('#connect').html('Disconnect');
+        $('.chosen-select').attr("disabled", true).trigger("chosen:updated");
             // switchery.enable();
             connected = true;
             connect.ladda('stop');
@@ -1276,21 +1281,21 @@ $(document).ready(function() {
             
         });
         $.getJSON('/api/' + ip_db + '/g12_pos/nbufs/' + offset_g12_pos, function(data){
-           offset_g12_pos += data.g12_pos_nbufs.length;
-           g12_pos_nbufs=g12_pos_nbufs.concat(data.g12_pos_nbufs);
-           g12_pos_nows=g12_pos_nows.concat(data.g12_pos_nows);
-           g12_pos_times=g12_pos_times.concat(data.g12_pos_times);
-           $('#gps #g12_pos_index').html(o + 1 + "/" + g12_pos_nbufs.length);
-           
-       });
+         offset_g12_pos += data.g12_pos_nbufs.length;
+         g12_pos_nbufs=g12_pos_nbufs.concat(data.g12_pos_nbufs);
+         g12_pos_nows=g12_pos_nows.concat(data.g12_pos_nows);
+         g12_pos_times=g12_pos_times.concat(data.g12_pos_times);
+         $('#gps #g12_pos_index').html(o + 1 + "/" + g12_pos_nbufs.length);
+
+     });
         $.getJSON('/api/' + ip_db + '/g12_sat/nbufs/' + offset_g12_sat, function(data){
             offset_g12_sat += data.g12_sat_nbufs.length;      
-           g12_sat_nbufs=g12_sat_nbufs.concat(data.g12_sat_nbufs);
-           g12_sat_nows=g12_sat_nows.concat(data.g12_sat_nows);
-           g12_sat_times=g12_sat_times.concat(data.g12_sat_times);
-           $('#gps #g12_sat_index').html(p + 1 + "/" + g12_sat_nbufs.length);
-                  
-       });
+            g12_sat_nbufs=g12_sat_nbufs.concat(data.g12_sat_nbufs);
+            g12_sat_nows=g12_sat_nows.concat(data.g12_sat_nows);
+            g12_sat_times=g12_sat_times.concat(data.g12_sat_times);
+            $('#gps #g12_sat_index').html(p + 1 + "/" + g12_sat_nbufs.length);
+
+        });
     }
 
     var connect = $('.ladda-button').ladda();
@@ -1341,7 +1346,7 @@ $(document).ready(function() {
         offset_g12_pos = 0;
         offset_g12_sat = 0;
         if ($(this).hasClass('connect')) {
-            
+
             connect.ladda('start');
             $.ajax({
                 url: '/api/connect/' + ip + '/' + db
@@ -1392,15 +1397,15 @@ $(document).ready(function() {
         if (p!=-1) updatehtml_g12_sat(g12_sat_nbufs[p]);
         q=cmd_nows.indexOf(hk_nows[i]);
         if (q!=-1) updatehtml_cmd(cmd_nbufs[q]);    
-}
+    }
 
     $('#next').click( function(){
         if (sync_on){
-           if (i<hk_nbufs.length-1) {
-               i=i+1;
-               updatehtml_all(i);
-           };
-        }else{
+         if (i<hk_nbufs.length-1) {
+             i=i+1;
+             updatehtml_all(i);
+         };
+     }else{
             //console.log(hk_nbufs);
             //console.log(hk_nows);
             //console.log(hk_times);
@@ -1417,22 +1422,22 @@ $(document).ready(function() {
     });
     $('#prev').click( function(){
         if (sync_on){
-           if (i>0) {
-               i=i-1;
-               updatehtml_all(i);
-           };
-        }else{
-            if (i>0)  {i=i-1; updatehtml_hk(hk_nbufs[i]);}
-            if (j>0)  {j=j-1; updatehtml_mon(mon_nbufs[j]);}
-            if (k>0)  {k=k-1; updatehtml_adu5_pat(adu5_pat_times[k]);}
-            if (l>0)  {l=l-1; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
-            if (m>0)  {m=m-1; updatehtml_adu5_sat(adu5_sat_times[m]);}
-            if (n>0)  {n=n-1; updatehtml_sshk(sshk_nbufs[n]);}
-            if (o>0)  {o=o-1; updatehtml_g12_pos(g12_pos_nbufs[o]);}
-            if (p>0)  {p=p-1; updatehtml_g12_sat(g12_sat_nbufs[p]);}
-            if (q>0)  {q=q-1; updatehtml_cmd(cmd_nbufs[q]);}
-        }
-    });
+         if (i>0) {
+             i=i-1;
+             updatehtml_all(i);
+         };
+     }else{
+        if (i>0)  {i=i-1; updatehtml_hk(hk_nbufs[i]);}
+        if (j>0)  {j=j-1; updatehtml_mon(mon_nbufs[j]);}
+        if (k>0)  {k=k-1; updatehtml_adu5_pat(adu5_pat_times[k]);}
+        if (l>0)  {l=l-1; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
+        if (m>0)  {m=m-1; updatehtml_adu5_sat(adu5_sat_times[m]);}
+        if (n>0)  {n=n-1; updatehtml_sshk(sshk_nbufs[n]);}
+        if (o>0)  {o=o-1; updatehtml_g12_pos(g12_pos_nbufs[o]);}
+        if (p>0)  {p=p-1; updatehtml_g12_sat(g12_sat_nbufs[p]);}
+        if (q>0)  {q=q-1; updatehtml_cmd(cmd_nbufs[q]);}
+    }
+});
     $('#first').click( function(){
         if (sync_on){
             i=0;
@@ -1470,7 +1475,7 @@ $(document).ready(function() {
     sync_checkbox.onchange = function() {
         if (sync_checkbox.checked) {
             sync_on = true;
-           
+
         } else {
             sync_on = false;
         };
@@ -1485,110 +1490,154 @@ $(document).ready(function() {
         if (auto_checkbox.checked) {
             myInterval = setInterval(function() {
                 if (sync_on){
-                   if (i<hk_nbufs.length-1) {
-                       i=i+1;
-                       updatehtml_all(i);
-                   };
-                }else{
-                    if (i<hk_nbufs.length-1)        {i=i+1; updatehtml_hk(hk_nbufs[i]);}
-                    if (j<mon_nbufs.length-1)       {j=j+1; updatehtml_mon(mon_nbufs[j]);}
-                    if (k<adu5_pat_times.length-1)  {k=k+1; updatehtml_adu5_pat(adu5_pat_times[k]);}
-                    if (l<adu5_vtg_times.length-1)  {l=l+1; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
-                    if (m<adu5_sat_times.length-1)  {m=m+1; updatehtml_adu5_sat(adu5_sat_times[m]);}
-                    if (n<sshk_nbufs.length-1)      {n=n+1; updatehtml_sshk(sshk_nbufs[n]);}
-                    if (o<g12_pos_nbufs.length-1)   {o=o+1; updatehtml_g12_pos(g12_pos_nbufs[o]);}
-                    if (p<g12_sat_nbufs.length-1)   {p=p+1; updatehtml_g12_sat(g12_sat_nbufs[p]);}
-                    if (q<cmd_nbufs.length-1)       {q=q+1; updatehtml_cmd(cmd_nbufs[q]);}
-                }
-            }, 1000);
+                 if (i<hk_nbufs.length-1) {
+                     i=i+1;
+                     updatehtml_all(i);
+                 };
+             }else{
+                if (i<hk_nbufs.length-1)        {i=i+1; updatehtml_hk(hk_nbufs[i]);}
+                if (j<mon_nbufs.length-1)       {j=j+1; updatehtml_mon(mon_nbufs[j]);}
+                if (k<adu5_pat_times.length-1)  {k=k+1; updatehtml_adu5_pat(adu5_pat_times[k]);}
+                if (l<adu5_vtg_times.length-1)  {l=l+1; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
+                if (m<adu5_sat_times.length-1)  {m=m+1; updatehtml_adu5_sat(adu5_sat_times[m]);}
+                if (n<sshk_nbufs.length-1)      {n=n+1; updatehtml_sshk(sshk_nbufs[n]);}
+                if (o<g12_pos_nbufs.length-1)   {o=o+1; updatehtml_g12_pos(g12_pos_nbufs[o]);}
+                if (p<g12_sat_nbufs.length-1)   {p=p+1; updatehtml_g12_sat(g12_sat_nbufs[p]);}
+                if (q<cmd_nbufs.length-1)       {q=q+1; updatehtml_cmd(cmd_nbufs[q]);}
+            }
+        }, 1000);
         } else {
             clearInterval(myInterval);
         };
     };
 
     $('#goto').click( function(){
-       var keywords=parseInt($('#keywords').val());
+     var keywords=parseInt($('#keywords').val());
        // console.log(keywords);
        if (sync_on){
-            var index=hk_times.indexOf(keywords);
-            if (index!=-1 && keywords){
-               i=index;
-               updatehtml_all(i);
-            }else{
-                swal({  title: 'HK Data not found!', type: "warning", timer: 3000, showConfirmButton: true});
-            }
-       }else{
-            var message = '';
-            var index=hk_times.indexOf(keywords);       if(index!=-1 && keywords) { i=index; updatehtml_hk(hk_nbufs[i]); message += 'HK ';}
-            var index=mon_times.indexOf(keywords);      if(index!=-1 && keywords) { j=index; updatehtml_mon(mon_nbufs[j]); message += 'MON ';}
-            var index=adu5_pat_times.indexOf(keywords); if(index!=-1 && keywords) { k=index; updatehtml_adu5_pat(adu5_pat_times[k]); message += 'ADU5_PAT ';}
-            var index=adu5_vtg_times.indexOf(keywords); if(index!=-1 && keywords) { l=index; updatehtml_adu5_vtg(adu5_vtg_times[l]); message += 'ADU5_VTG ';}
-            var index=adu5_sat_times.indexOf(keywords); if(index!=-1 && keywords) { m=index; updatehtml_adu5_sat(adu5_sat_times[m]); message += 'ADU5_SAT ';}
-            var index=sshk_times.indexOf(keywords);     if(index!=-1 && keywords) { n=index; updatehtml_sshk(sshk_nbufs[n]); message += 'SSHK ';}
-            var index=g12_pos_times.indexOf(keywords);  if(index!=-1 && keywords) { o=index; updatehtml_g12_pos(g12_pos_nbufs[o]); message += 'G12_POS ';}
-            var index=g12_sat_times.indexOf(keywords);  if(index!=-1 && keywords) { p=index; updatehtml_g12_sat(g12_sat_nbufs[p]); message += 'G12_SAT ';}
-            var index=cmd_times.indexOf(keywords);      if(index!=-1 && keywords) { q=index; updatehtml_cmd(cmd_nbufs[q]); message += 'CMD ';}
-            if (message == ''){
-                swal({  title: 'No matched time found!', type: "warning", timer: 3000, showConfirmButton: true});
-            }else{
-                swal({  title: 'Matched '+message + 'time are found!', type: "success", timer: 3000, showConfirmButton: true});
-            }
+        var index=hk_times.indexOf(keywords);
+        if (index!=-1 && keywords){
+         i=index;
+         updatehtml_all(i);
+     }else{
+        swal({  title: 'HK Data not found!', type: "warning", timer: 3000, showConfirmButton: true});
+    }
+}else{
+    var message = '';
+    var index=hk_times.indexOf(keywords);       if(index!=-1 && keywords) { i=index; updatehtml_hk(hk_nbufs[i]); message += 'HK ';}
+    var index=mon_times.indexOf(keywords);      if(index!=-1 && keywords) { j=index; updatehtml_mon(mon_nbufs[j]); message += 'MON ';}
+    var index=adu5_pat_times.indexOf(keywords); if(index!=-1 && keywords) { k=index; updatehtml_adu5_pat(adu5_pat_times[k]); message += 'ADU5_PAT ';}
+    var index=adu5_vtg_times.indexOf(keywords); if(index!=-1 && keywords) { l=index; updatehtml_adu5_vtg(adu5_vtg_times[l]); message += 'ADU5_VTG ';}
+    var index=adu5_sat_times.indexOf(keywords); if(index!=-1 && keywords) { m=index; updatehtml_adu5_sat(adu5_sat_times[m]); message += 'ADU5_SAT ';}
+    var index=sshk_times.indexOf(keywords);     if(index!=-1 && keywords) { n=index; updatehtml_sshk(sshk_nbufs[n]); message += 'SSHK ';}
+    var index=g12_pos_times.indexOf(keywords);  if(index!=-1 && keywords) { o=index; updatehtml_g12_pos(g12_pos_nbufs[o]); message += 'G12_POS ';}
+    var index=g12_sat_times.indexOf(keywords);  if(index!=-1 && keywords) { p=index; updatehtml_g12_sat(g12_sat_nbufs[p]); message += 'G12_SAT ';}
+    var index=cmd_times.indexOf(keywords);      if(index!=-1 && keywords) { q=index; updatehtml_cmd(cmd_nbufs[q]); message += 'CMD ';}
+    if (message == ''){
+        swal({  title: 'No matched time found!', type: "warning", timer: 3000, showConfirmButton: true});
+    }else{
+        swal({  title: 'Matched '+message + 'time are found!', type: "success", timer: 3000, showConfirmButton: true});
+    }
 
-       }
-    });
+}
+});
     $(function () {
 
-    // Prepare demo data
-    var data = [
-        {
+        var H = Highcharts,
+        map = H.maps['custom/antarctica'],
+        chart;
+
+
+    // Add series with state capital bubbles
+    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=us-capitals.json&callback=?', function (json) {
+        var data = [{
             "hc-key": "aq-3638",
             "value": 0
         },
         {
             "hc-key": "aq-3639",
             "value": 1
-        }
-    ];
+        }];
 
-    // Initiate the chart
-    $('#container').highcharts('Map', {
+        chart = Highcharts.mapChart('container', {
+            title: {
+                text: 'Anita Course'
+            },
 
-        title: {
-            text: 'Anita Course'
-        },
+            tooltip: {
+                pointFormat: '{point.capital}, {point.parentState}<br>' +
+                'Lat: {point.lat}<br>' +
+                'Lon: {point.lon}<br>' +
+                'Population: {point.population}'
+            },
 
-        subtitle: {
-            text: 'Source map: <a href="https://code.highcharts.com/mapdata/custom/antarctica.js">Antarctica</a>'
-        },
-
-        mapNavigation: {
-            enabled: true,
-            buttonOptions: {
-                verticalAlign: 'bottom'
-            }
-        },
-
-        colorAxis: {
-            min: 0
-        },
-
-        series: [{
-            data: data,
-            mapData: Highcharts.maps['custom/antarctica'],
-            joinBy: 'hc-key',
-            name: 'Random data',
-            states: {
-                hover: {
-                    color: '#a4edba'
+            xAxis: {
+                crosshair: {
+                    zIndex: 5,
+                    dashStyle: 'dot',
+                    snap: false,
+                    color: 'gray'
                 }
             },
-            dataLabels: {
-                enabled: true,
-                format: '{point.name}'
+
+            yAxis: {
+                crosshair: {
+                    zIndex: 5,
+                    dashStyle: 'dot',
+                    snap: false,
+                    color: 'gray'
+                }
+            },
+
+            series: [{
+                name: 'Basemap',
+                mapData: map,
+                borderColor: '#606060',
+                nullColor: 'rgba(200, 200, 200, 0.2)',
+                showInLegend: false
+            },]
+        });
+    });
+
+    // Display custom label with lat/lon next to crosshairs
+    $('#container').mousemove(function (e) {
+        var position;
+
+        if (chart) {
+            if (!chart.lab) {
+                chart.lab = chart.renderer.text('', 0, 0)
+                .attr({
+                    zIndex: 5
+                })
+                .css({
+                    color: '#505050'
+                })
+                .add();
             }
-        }]
+
+            e = chart.pointer.normalize(e);
+            position = chart.fromPointToLatLon({
+                x: chart.xAxis[0].toValue(e.chartX),
+                y: chart.yAxis[0].toValue(e.chartY)
+            });
+
+            chart.lab.attr({
+                x: e.chartX + 5,
+                y: e.chartY - 22,
+                text: 'Lat: ' + position.lat.toFixed(2) + '<br>Lon: ' + position.lon.toFixed(2)
+            });
+        }
+    });
+
+    $('#container').mouseout(function () {
+        if (chart && chart.lab) {
+            chart.lab.destroy();
+            chart.lab = null;
+        }
     });
 });
+
 });
- </script>
- {% endblock %}
+
+</script>
+{% endblock %}
