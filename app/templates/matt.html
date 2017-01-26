@@ -297,7 +297,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: sbst_range_map,
+        //colorMap: sbst_range_map,
         chartRangeMin: -10,
         chartRangeMax: 100
     });
@@ -312,7 +312,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: sbst_range_map,
+        //colorMap: sbst_range_map,
         chartRangeMin: -10,
         chartRangeMax: 100
     });
@@ -327,7 +327,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: sbst_range_map,
+        //colorMap: sbst_range_map,
         chartRangeMin: -10,
         chartRangeMax: 100
     });
@@ -342,7 +342,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: core_range_map,
+        //colorMap: core_range_map,
         chartRangeMin: -10,
         chartRangeMax: 100
     });
@@ -372,7 +372,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: it_et_range_map,
+        //colorMap: it_et_range_map,
         chartRangeMin: -10,
         chartRangeMax: 100
     });
@@ -387,7 +387,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: it_et_range_map,
+        //colorMap: it_et_range_map,
         chartRangeMin: -10,
         chartRangeMax: 100
     });
@@ -403,7 +403,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: disk0_range_map,
+        //colorMap: disk0_range_map,
         chartRangeMin: 0,
         chartRangeMax: 4000
     });
@@ -419,7 +419,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: disk1_range_map,
+        //colorMap: disk1_range_map,
         chartRangeMin: 0,
         chartRangeMax: 1000
     });
@@ -435,7 +435,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: disk2_range_map,
+        //colorMap: disk2_range_map,
         chartRangeMin: 0,
         chartRangeMax: 2500
     });
@@ -451,7 +451,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: disk3_range_map,
+        //colorMap: disk3_range_map,
         chartRangeMin: 0,
         chartRangeMax: 3000
     });
@@ -467,7 +467,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: disk4_range_map,
+        //colorMap: disk4_range_map,
         chartRangeMin: 0,
         chartRangeMax: 6000000
     });
@@ -483,7 +483,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: disk5_range_map,
+       //colorMap: disk5_range_map,
         chartRangeMin: 0,
         chartRangeMax: 6000000
     });
@@ -499,7 +499,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: disk6_range_map,
+        //colorMap: disk6_range_map,
         chartRangeMin: 0,
         chartRangeMax: 3000
     });
@@ -515,7 +515,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: disk7_range_map,
+        //colorMap: disk7_range_map,
         chartRangeMin: 0,
         chartRangeMax: 250000
     });
@@ -531,7 +531,7 @@ function update_sbst1_data($selector, new_data) {
             barWidth: 8,
             height: '90',
         // zeroAxis: false,
-        colorMap: link_range_map,
+        //colorMap: link_range_map,
         chartRangeMin: 0,
         chartRangeMax: 100
     });
@@ -1563,8 +1563,12 @@ $(document).ready(function() {
 
             tooltip: {
                 pointFormat:
-                'Lat: {point.lat}<br>' +
-                'Lon: {point.lon}<br>'
+                'Pitch: {point.pitch}<br>' +
+                'Roll: {point.roll}<br>' +
+                'Altitude: {point.altitude}<br>' +
+                'Heading: {point.heading}<br>' +
+                'Latitude: {point.lat}<br>' +
+                'Longitude: {point.lon}<br>'
             },
 
             xAxis: {
@@ -1595,6 +1599,10 @@ $(document).ready(function() {
             {
                 name: 'Anita',
                 data: [{
+                    pitch: data.pat_a.pitch,
+                    roll: data.pat_a.roll,
+                    altitude: data.pat_a.altitude,
+                    heading: data.pat_a.heading,
                     lat: data.pat_a.latitude,
                     lon: data.pat_a.longitude
                 }],
