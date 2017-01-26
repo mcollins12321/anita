@@ -211,9 +211,6 @@
 <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/mapdata/custom/antarctica.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
-<script src="https://code.highcharts.com/maps/highmaps.js"></script>
-<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
 <script>
     var hk_nbufs=[];
     var hk_nows=[];
@@ -1384,7 +1381,7 @@ $(document).ready(function() {
         j=mon_nows.indexOf(hk_nows[i]);
         if (j!=-1) updatehtml_mon(mon_nbufs[j]);
         k=adu5_pat_nows.indexOf(hk_nows[i]);
-        if (k!=-1) updatehtml_adu5_pat(adu5_pat_times[k]);
+        if (k!=-1) updatehtml_adu5_pat(adu5_pat_times[k]);updatehtml_map(adu5_pat_times[k]);
         l=adu5_vtg_nows.indexOf(hk_nows[i]);
         if (l!=-1) updatehtml_adu5_vtg(adu5_vtg_times[l]);
         m=adu5_sat_nows.indexOf(hk_nows[i]);
@@ -1411,7 +1408,7 @@ $(document).ready(function() {
             //console.log(hk_times);
             if (i<hk_nbufs.length-1)        {i=i+1; updatehtml_hk(hk_nbufs[i]);}
             if (j<mon_nbufs.length-1)       {j=j+1; updatehtml_mon(mon_nbufs[j]);}
-            if (k<adu5_pat_times.length-1)  {k=k+1; updatehtml_adu5_pat(adu5_pat_times[k]);}
+            if (k<adu5_pat_times.length-1)  {k=k+1; updatehtml_adu5_pat(adu5_pat_times[k]);updatehtml_map(adu5_pat_times[k]);}
             if (l<adu5_vtg_times.length-1)  {l=l+1; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
             if (m<adu5_sat_times.length-1)  {m=m+1; updatehtml_adu5_sat(adu5_sat_times[m]);}
             if (n<sshk_nbufs.length-1)      {n=n+1; updatehtml_sshk(sshk_nbufs[n]);}
@@ -1429,7 +1426,7 @@ $(document).ready(function() {
      }else{
         if (i>0)  {i=i-1; updatehtml_hk(hk_nbufs[i]);}
         if (j>0)  {j=j-1; updatehtml_mon(mon_nbufs[j]);}
-        if (k>0)  {k=k-1; updatehtml_adu5_pat(adu5_pat_times[k]);}
+        if (k>0)  {k=k-1; updatehtml_adu5_pat(adu5_pat_times[k]);updatehtml_map(adu5_pat_times[k]);}
         if (l>0)  {l=l-1; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
         if (m>0)  {m=m-1; updatehtml_adu5_sat(adu5_sat_times[m]);}
         if (n>0)  {n=n-1; updatehtml_sshk(sshk_nbufs[n]);}
@@ -1445,7 +1442,7 @@ $(document).ready(function() {
         }else{
             {i=0; updatehtml_hk(hk_nbufs[i]);}
             {j=0; updatehtml_mon(mon_nbufs[j]);}
-            {k=0; updatehtml_adu5_pat(adu5_pat_times[k]);}
+            {k=0; updatehtml_adu5_pat(adu5_pat_times[k]); updatehtml_map(adu5_pat_times[k]);}
             {l=0; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
             {m=0; updatehtml_adu5_sat(adu5_sat_times[m]);}
             {n=0; updatehtml_sshk(sshk_nbufs[n]);}
@@ -1461,7 +1458,7 @@ $(document).ready(function() {
         }else{
             {i=hk_nbufs.length-1; updatehtml_hk(hk_nbufs[i]);}
             {j=mon_nbufs.length-1; updatehtml_mon(mon_nbufs[j]);}
-            {k=adu5_pat_times.length-1; updatehtml_adu5_pat(adu5_pat_times[k]);}
+            {k=adu5_pat_times.length-1; updatehtml_adu5_pat(adu5_pat_times[k]);updatehtml_map(adu5_pat_times[k]);}
             {l=adu5_vtg_times.length-1; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
             {m=adu5_sat_times.length-1; updatehtml_adu5_sat(adu5_sat_times[m]);}
             {n=sshk_nbufs.length-1; updatehtml_sshk(sshk_nbufs[n]);}
@@ -1497,7 +1494,7 @@ $(document).ready(function() {
              }else{
                 if (i<hk_nbufs.length-1)        {i=i+1; updatehtml_hk(hk_nbufs[i]);}
                 if (j<mon_nbufs.length-1)       {j=j+1; updatehtml_mon(mon_nbufs[j]);}
-                if (k<adu5_pat_times.length-1)  {k=k+1; updatehtml_adu5_pat(adu5_pat_times[k]);}
+                if (k<adu5_pat_times.length-1)  {k=k+1; updatehtml_adu5_pat(adu5_pat_times[k]);updatehtml_map(adu5_pat_times[k]);}
                 if (l<adu5_vtg_times.length-1)  {l=l+1; updatehtml_adu5_vtg(adu5_vtg_times[l]);}
                 if (m<adu5_sat_times.length-1)  {m=m+1; updatehtml_adu5_sat(adu5_sat_times[m]);}
                 if (n<sshk_nbufs.length-1)      {n=n+1; updatehtml_sshk(sshk_nbufs[n]);}
@@ -1526,7 +1523,7 @@ $(document).ready(function() {
     var message = '';
     var index=hk_times.indexOf(keywords);       if(index!=-1 && keywords) { i=index; updatehtml_hk(hk_nbufs[i]); message += 'HK ';}
     var index=mon_times.indexOf(keywords);      if(index!=-1 && keywords) { j=index; updatehtml_mon(mon_nbufs[j]); message += 'MON ';}
-    var index=adu5_pat_times.indexOf(keywords); if(index!=-1 && keywords) { k=index; updatehtml_adu5_pat(adu5_pat_times[k]); message += 'ADU5_PAT ';}
+    var index=adu5_pat_times.indexOf(keywords); if(index!=-1 && keywords) { k=index; updatehtml_adu5_pat(adu5_pat_times[k]); updatehtml_map(adu5_pat_times[k]);message += 'ADU5_PAT ';}
     var index=adu5_vtg_times.indexOf(keywords); if(index!=-1 && keywords) { l=index; updatehtml_adu5_vtg(adu5_vtg_times[l]); message += 'ADU5_VTG ';}
     var index=adu5_sat_times.indexOf(keywords); if(index!=-1 && keywords) { m=index; updatehtml_adu5_sat(adu5_sat_times[m]); message += 'ADU5_SAT ';}
     var index=sshk_times.indexOf(keywords);     if(index!=-1 && keywords) { n=index; updatehtml_sshk(sshk_nbufs[n]); message += 'SSHK ';}
@@ -1541,7 +1538,7 @@ $(document).ready(function() {
 
 }
 });
-    $(function () {
+function updatehtml_map(adu5_pat) {
 
         var H = Highcharts,
         map = H.maps['custom/antarctica'],
@@ -1549,26 +1546,25 @@ $(document).ready(function() {
 
 
     // Add series with state capital bubbles
-    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=us-capitals.json&callback=?', function (json) {
-        var data = [{
-            "hc-key": "aq-3638",
-            "value": 0
-        },
-        {
-            "hc-key": "aq-3639",
-            "value": 1
-        }];
+    $.getJSON('/api/' + ip_db + '/adu5_pat/' + adu5_pat, function (data) {
+       
 
         chart = Highcharts.mapChart('container', {
             title: {
                 text: 'Anita Course'
             },
 
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
             tooltip: {
                 pointFormat: '{point.capital}, {point.parentState}<br>' +
                 'Lat: {point.lat}<br>' +
-                'Lon: {point.lon}<br>' +
-                'Population: {point.population}'
+                'Lon: {point.lon}<br>'
             },
 
             xAxis: {
@@ -1595,10 +1591,20 @@ $(document).ready(function() {
                 borderColor: '#606060',
                 nullColor: 'rgba(200, 200, 200, 0.2)',
                 showInLegend: false
-            },]
+            },
+            {
+                name: 'Anita',
+                data: [{
+                    lat: data.pat_a.latitude,
+                    lon: data.pat_a.longitude
+                }],
+                type: 'mapbubble',
+                maxSize: '1%',
+                color: H.getOptions().colors[2]
+            }]
         });
     });
-
+}
     // Display custom label with lat/lon next to crosshairs
     $('#container').mousemove(function (e) {
         var position;
@@ -1637,7 +1643,7 @@ $(document).ready(function() {
     });
 });
 
-});
+
 
 </script>
 {% endblock %}
